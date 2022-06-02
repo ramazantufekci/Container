@@ -1,0 +1,17 @@
+{
+    "name": "drn/container",
+    "authors": [
+        {
+            "name": "ramazantufekci",
+            "email": "info@ramazantufekci.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+          "DRN\\": "src/"
+        }
+      },
+    "require": {
+        "psr/container": "^2.0"
+    }
+}
