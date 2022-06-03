@@ -24,7 +24,6 @@ class AppContainer implements ContainerInterface{
 
     public function has(string $id):bool
     {
-        var_export($id);
         return isset($this->instances[$id]);
     }
 
@@ -35,7 +34,7 @@ class AppContainer implements ContainerInterface{
         }
 
         $reflectionClass = new ReflectionClass($className);
-
+        
         if($reflectionClass->getConstructor()==null){
             return new $className;
         }
